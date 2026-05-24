@@ -534,7 +534,169 @@
         padding: 60px 0;
     }
 }
+/* ========== RESPONSIVE - Global Layout and Header/Footer Adjustments ========== */
+@media (max-width: 1200px) {
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 
+    .contact_content,
+    .process_text-block,
+    .about_text-block,
+    .ecosystem_card,
+    .benefit_item {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header_fixed .container,
+    .header_top .container,
+    .footer_bottom_container,
+    .footer_container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .header_fixed .container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .header_top .container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .nav {
+        width: 100%;
+        justify-content: center;
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+
+    .footer_container {
+        grid-template-columns: repeat(2, minmax(220px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .header_fixed {
+        position: relative;
+        padding-top: 10px;
+    }
+
+    .header_top {
+        padding: 14px 0;
+    }
+
+    .header_top .container,
+    .header_fixed .container,
+    .footer_bottom_container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .header_buttons,
+    .header_calc {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .logo {
+        font-size: 26px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 12px;
+    }
+
+    .nav-link {
+        font-size: 15px;
+        padding: 12px 0;
+    }
+
+    .contact_content {
+        padding: 30px;
+        gap: 40px;
+    }
+
+    .contact_img {
+        width: 100%;
+        max-height: 520px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 480px) {
+    .container,
+    .header_top .container,
+    .header_fixed .container,
+    .footer_container,
+    .footer_bottom_container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header_top,
+    .header_fixed {
+        padding: 0;
+    }
+
+    .nav {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+    .contact_content {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .contact_title {
+        font-size: 24px;
+    }
+
+    .contact_subtitle {
+        font-size: 13px;
+        padding: 0;
+    }
+
+    .form_input,
+    .form_select {
+        width: 100%;
+    }
+
+    .form_group_phone {
+        grid-template-columns: 1fr;
+    }
+
+    .form_button {
+        width: 100%;
+        padding: 14px 0;
+    }
+
+    .footer_container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer_bottom_container {
+        text-align: center;
+        gap: 18px;
+    }
+}
 @media (max-width: 480px) {
     .projects_grid {
         grid-template-columns: 1fr;
@@ -800,5 +962,169 @@
 
     .team_section {
         padding: 40px 0;
+    }
+}
+
+/* ========== RESPONSIVE - Global Layout and Header/Footer Adjustments ========== */
+@media (max-width: 1200px) {
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .contact_content,
+    .process_text-block,
+    .about_text-block,
+    .ecosystem_card,
+    .benefit_item {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header_fixed .container,
+    .header_top .container,
+    .footer_bottom_container,
+    .footer_container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .header_fixed .container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .header_top .container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .nav {
+        width: 100%;
+        justify-content: center;
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+
+    .footer_container {
+        grid-template-columns: repeat(2, minmax(220px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .header_fixed {
+        position: relative;
+        padding-top: 10px;
+    }
+
+    .header_top {
+        padding: 14px 0;
+    }
+
+    .header_top .container,
+    .header_fixed .container,
+    .footer_bottom_container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .header_buttons,
+    .header_calc {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .logo {
+        font-size: 26px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 12px;
+    }
+
+    .nav-link {
+        font-size: 15px;
+        padding: 12px 0;
+    }
+
+    .contact_content {
+        padding: 30px;
+        gap: 40px;
+    }
+
+    .contact_img {
+        width: 100%;
+        max-height: 520px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 480px) {
+    .container,
+    .header_top .container,
+    .header_fixed .container,
+    .footer_container,
+    .footer_bottom_container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header_top,
+    .header_fixed {
+        padding: 0;
+    }
+
+    .nav {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+    .contact_content {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .contact_title {
+        font-size: 24px;
+    }
+
+    .contact_subtitle {
+        font-size: 13px;
+        padding: 0;
+    }
+
+    .form_input,
+    .form_select {
+        width: 100%;
+    }
+
+    .form_group_phone {
+        grid-template-columns: 1fr;
+    }
+
+    .form_button {
+        width: 100%;
+        padding: 14px 0;
+    }
+
+    .footer_container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer_bottom_container {
+        text-align: center;
+        gap: 18px;
     }
 }
