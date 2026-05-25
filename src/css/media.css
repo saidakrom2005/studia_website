@@ -965,6 +965,329 @@
     }
 }
 
+/* ========== RESPONSIVE - Full Site Adaptive Layouts ========== */
+@media (max-width: 1200px) {
+    .about_section,
+    .portfolio_section,
+    .services_intro,
+    .discover_section,
+    .recognition_section,
+    .section_projects,
+    .portfolio_filters,
+    .cta_section,
+    .partnership,
+    .team_section {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .about_img,
+    .contact_img,
+    .projects_card_img,
+    .partnership_card_img,
+    .discover_container img,
+    .recognition_video {
+        width: 100%;
+        height: auto;
+    }
+
+    .section_cards,
+    .partnership_cards,
+    .projects_grid,
+    .filters_wrapper,
+    .ecosystem-container {
+        gap: 24px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header_fixed .container,
+    .header_top .container,
+    .footer_bottom_container,
+    .footer_container,
+    .discover_container,
+    .partnership_container,
+    .recognition_container {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .header_fixed .container,
+    .header_top .container {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .header_buttons,
+    .header_calc,
+    .header_bottom-text,
+    .footer_bottom_left,
+    .footer_bottom_right {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .nav {
+        width: 100%;
+        justify-content: center;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .about_section .container,
+    .discover_container,
+    .section_projects .container,
+    .portfolio_filters .container,
+    .portfolio_projects .container,
+    .ecosystem-container {
+        max-width: 100%;
+    }
+
+    .section_cards {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(180px, 1fr));
+    }
+
+    .partnership_cards {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(260px, 1fr));
+    }
+
+    .projects_grid {
+        grid-template-columns: repeat(2, minmax(260px, 1fr));
+    }
+
+    .filters_wrapper {
+        grid-template-columns: repeat(2, minmax(220px, 1fr));
+    }
+
+    .discover_container,
+    .ecosystem-container {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .header_fixed {
+        position: relative;
+        padding-top: 12px;
+    }
+
+    .header_top {
+        padding: 14px 0;
+    }
+
+    .header_top .container,
+    .header_fixed .container,
+    .footer_bottom_container,
+    .footer_container,
+    .discover_container,
+    .portfolio_intro,
+    .filters_wrapper,
+    .projects_grid,
+    .team_content,
+    .partnership_cards,
+    .section_cards {
+        width: 100%;
+    }
+
+    .header_buttons,
+    .header_calc {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .logo {
+        font-size: 26px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-link {
+        font-size: 15px;
+        padding: 10px 0;
+    }
+
+    .about_section,
+    .discover_section,
+    .portfolio_section,
+    .recognition_section,
+    .services_intro,
+    .section_projects,
+    .portfolio_filters,
+    .cta_section,
+    .team_section,
+    .partnership {
+        padding: 50px 0;
+    }
+
+    .about_section .container,
+    .projects_grid,
+    .partnership_cards,
+    .section_cards,
+    .filters_wrapper,
+    .ecosystem-container,
+    .discover_container {
+        grid-template-columns: 1fr;
+    }
+
+    .about_img,
+    .contact_img,
+    .projects_card_img,
+    .partnership_card_img,
+    .discover_container img,
+    .recognition_video {
+        max-height: none;
+    }
+
+    .section_cards {
+        gap: 20px;
+    }
+
+    .partnership_cards {
+        gap: 20px;
+    }
+
+    .projects_grid {
+        gap: 18px;
+    }
+
+    .filters_wrapper {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .project_title,
+    .project_area,
+    .section_title,
+    .section_subtitle,
+    .partners_title,
+    .recognition_title,
+    .contact_title {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .container,
+    .header_top .container,
+    .header_fixed .container,
+    .footer_container,
+    .footer_bottom_container,
+    .about_section,
+    .portfolio_section,
+    .services_intro,
+    .discover_section,
+    .section_projects,
+    .portfolio_filters,
+    .cta_section,
+    .team_section,
+    .partnership,
+    .recognition_section {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header_top,
+    .header_fixed {
+        padding: 0;
+    }
+
+    .nav {
+        width: 100%;
+        gap: 8px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+    .header_bottom-text {
+        padding: 0 10px;
+    }
+
+    .about_section,
+    .discover_section,
+    .portfolio_section,
+    .recognition_section,
+    .services_intro,
+    .section_projects,
+    .portfolio_filters,
+    .cta_section,
+    .team_section,
+    .partnership {
+        padding: 40px 0;
+    }
+
+    .section_cards,
+    .partnership_cards,
+    .projects_grid,
+    .filters_wrapper,
+    .ecosystem-container,
+    .discover_container {
+        display: block;
+    }
+
+    .project_title,
+    .project_area,
+    .section_title,
+    .section_subtitle,
+    .partners_title,
+    .recognition_title,
+    .contact_title,
+    .cta_title {
+        font-size: 20px;
+        text-align: left;
+    }
+
+    .filter_label,
+    .filter_select,
+    .filter_input,
+    .filter_arrow,
+    .project_title,
+    .project_area,
+    .card_text,
+    .discover_subtitle,
+    .partnership_card_text,
+    .team_description,
+    .team_highlight {
+        font-size: 14px;
+    }
+
+    .header_buttons,
+    .header_calc {
+        text-align: center;
+    }
+
+    .about_img,
+    .contact_img,
+    .projects_card_img,
+    .partnership_card_img,
+    .discover_container img,
+    .recognition_video {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer_container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer_bottom_container {
+        flex-direction: column;
+        text-align: center;
+        gap: 16px;
+    }
+}
+
 /* ========== RESPONSIVE - Global Layout and Header/Footer Adjustments ========== */
 @media (max-width: 1200px) {
     .container {
